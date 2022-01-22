@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 const Blog = require('./models/blog');
 
-const dbURI = 'mongodb+srv://nodejsblog2:pass123321@nodejsmongo.a4lyw.mongodb.net/nodejs-cc?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://nodejsblog2:password@nodejsmongo.a4lyw.mongodb.net/nodejs-cc?retryWrites=true&w=majority';
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(2022))
     .catch((err) => console.log(err));
